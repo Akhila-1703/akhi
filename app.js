@@ -58,3 +58,5 @@ function createTaskElement(text, isCompleted) {
     taskList.appendChild(li);
 }
 // changed colors
+
+// refactored the file
