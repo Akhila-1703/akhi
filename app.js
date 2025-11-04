@@ -60,3 +60,5 @@ function createTaskElement(text, isCompleted) {
 // changed colors
 
 // refactored the file
+
+// fixed layout issue
