@@ -62,3 +62,5 @@ function createTaskElement(text, isCompleted) {
 // refactored the file
 
 // fixed layout issue
+
+// fixed button hover
