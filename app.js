@@ -64,3 +64,5 @@ function createTaskElement(text, isCompleted) {
 // fixed layout issue
 
 // fixed button hover
+
+// removed dead code
