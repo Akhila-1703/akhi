@@ -68,3 +68,5 @@ function createTaskElement(text, isCompleted) {
 // removed dead code
 
 // small fix
+
+// updated logic
