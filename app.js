@@ -70,3 +70,5 @@ function createTaskElement(text, isCompleted) {
 // small fix
 
 // updated logic
+
+// fixed mobile view
