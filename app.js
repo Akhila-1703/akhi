@@ -72,3 +72,5 @@ function createTaskElement(text, isCompleted) {
 // updated logic
 
 // fixed mobile view
+
+// fixed the undefined error
