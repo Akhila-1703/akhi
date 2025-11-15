@@ -76,3 +76,5 @@ function createTaskElement(text, isCompleted) {
 // fixed the undefined error
 
 // fixed typo
+
+// added flexbox
