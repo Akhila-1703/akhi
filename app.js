@@ -74,3 +74,5 @@ function createTaskElement(text, isCompleted) {
 // fixed mobile view
 
 // fixed the undefined error
+
+// fixed typo
