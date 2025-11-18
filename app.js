@@ -78,3 +78,5 @@ function createTaskElement(text, isCompleted) {
 // fixed typo
 
 // added flexbox
+
+// fixed console error
