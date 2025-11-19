@@ -80,3 +80,5 @@ function createTaskElement(text, isCompleted) {
 // added flexbox
 
 // fixed console error
+
+// ui update
