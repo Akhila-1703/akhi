@@ -82,3 +82,5 @@ function createTaskElement(text, isCompleted) {
 // fixed console error
 
 // ui update
+
+// adjusted font size
