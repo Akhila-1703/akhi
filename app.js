@@ -86,3 +86,5 @@ function createTaskElement(text, isCompleted) {
 // adjusted font size
 
 // adjusted width
+
+// updated logic
