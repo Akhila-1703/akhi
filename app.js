@@ -88,3 +88,5 @@ function createTaskElement(text, isCompleted) {
 // adjusted width
 
 // updated logic
+
+// removed dead code
