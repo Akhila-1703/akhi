@@ -92,3 +92,5 @@ function createTaskElement(text, isCompleted) {
 // removed dead code
 
 // fixed console error
+
+// fixed the undefined error
