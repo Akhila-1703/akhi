@@ -90,3 +90,5 @@ function createTaskElement(text, isCompleted) {
 // updated logic
 
 // removed dead code
+
+// fixed console error
