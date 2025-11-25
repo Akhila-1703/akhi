@@ -94,3 +94,5 @@ function createTaskElement(text, isCompleted) {
 // fixed console error
 
 // fixed the undefined error
+
+// cleanup
