@@ -96,3 +96,5 @@ function createTaskElement(text, isCompleted) {
 // fixed the undefined error
 
 // cleanup
+
+// added more padding
