@@ -2,18 +2,37 @@ const taskInput = document.getElementById('task-input');
 const addBtn = document.getElementById('add-btn');
 const taskList = document.getElementById('task-list');
 
+document.addEventListener('DOMContentLoaded', loadTasks);
 addBtn.addEventListener('click', addTask);
+
+function loadTasks() {
+    const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    tasks.forEach(task => createTaskElement(task.text, task.completed));
+}
+
+function saveTasks() {
+    const tasks = [];
+    document.querySelectorAll('li').forEach(li => {
+        tasks.push({
+            text: li.querySelector('span').textContent,
+            completed: li.classList.contains('completed')
+        });
+    });
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
 
 function addTask() {
     const text = taskInput.value.trim();
     if (text !== '') {
-        createTaskElement(text);
+        createTaskElement(text, false);
+        saveTasks();
         taskInput.value = '';
     }
 }
 
-function createTaskElement(text) {
+function createTaskElement(text, isCompleted) {
     const li = document.createElement('li');
+    if (isCompleted) li.classList.add('completed');
     
     const span = document.createElement('span');
     span.textContent = text;
@@ -27,11 +46,13 @@ function createTaskElement(text) {
     
     li.addEventListener('click', () => {
         li.classList.toggle('completed');
+        saveTasks();
     });
     
     deleteBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         li.remove();
+        saveTasks();
     });
     
     taskList.appendChild(li);
