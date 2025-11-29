@@ -98,3 +98,5 @@ function createTaskElement(text, isCompleted) {
 // cleanup
 
 // added more padding
+
+// changed font
